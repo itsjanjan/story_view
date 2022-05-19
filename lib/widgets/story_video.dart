@@ -114,7 +114,7 @@ class StoryVideoState extends State<StoryVideo> {
       );
     }
 
-    return widget.videoLoader.state == LoadState.loading
+    return widget.videoLoader.state == LoadState.loading || widget.videoLoader.state == LoadState.success
         ? Center(
             child: Container(
               width: 70,
